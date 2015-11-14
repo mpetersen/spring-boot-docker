@@ -18,4 +18,5 @@ and refresh the browser.
 
 ## System requirements
 
-You need to have a running Docker installation and docker-compose installed to run this demo.
+You need to have a running Docker installation and docker-compose installed to run this demo. It 
+also assumes, that you are using any kind of IDE - it works with Eclipse..
