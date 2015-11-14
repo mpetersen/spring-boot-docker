@@ -15,3 +15,7 @@ application by calling `http://<IP address of your docker container>:8080`.
 
 Now change something in the `Example.java` class, e.g. replace "Hello World!" with something else
 and refresh the browser.
+
+## System requirements
+
+You need to have a running Docker installation and docker-compose installed to run this demo.
