@@ -6,4 +6,6 @@ RUN curl -o mvn.tar.gz http://www.us.apache.org/dist/maven/maven-3/3.3.3/binarie
 	rm mvn.tar.gz &&\
 	mkdir /app
 	
-CMD cd /app && /mvn/bin/mvn spring-boot:run
+WORKDIR /app
+	
+CMD ["/mvn/bin/mvn", "spring-boot:run"]
