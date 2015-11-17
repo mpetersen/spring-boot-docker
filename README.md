@@ -1,19 +1,18 @@
 # Spring-Boot Docker Demo Project
 
-This demo project shows how to run a Spring-Boot application inside a docker container - including hot 
-reloading classes.
+This demo project shows how to run a Spring-Boot application inside a docker container - including 
+hot reloading classes.
 
-## Setup
+## Running and Debugging
 
-To run this project change into the `docker/` directory and run `docker-compose up`. Then you can access the 
-application by calling `http://<IP address of your docker container>:8080`.  
+Change into the `docker` directory. This directory contains the `Dockerfile` and `docker-compose` 
+files, and two shell scripts for running or debugging the application.
 
-	# cd docker/
-	# docker-compose up
-	
-## Debugging
+To start the container normally, start the `./run.sh` script.
 
-The current version starts a remote debugging session at port 5005.
+To debug the application, start the `./debug.sh` script and connect the remote debugging session to 
+port `5005` of the container (get the IP of your docker-machine by running 
+`docker-machine ip <name-of-machine>`).
 	
 ## Check hot-reloading classes
 
