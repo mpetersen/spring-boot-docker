@@ -8,4 +8,4 @@ RUN curl -o mvn.tar.gz http://www.us.apache.org/dist/maven/maven-3/3.3.3/binarie
 	
 WORKDIR /app
 	
-CMD ["/mvn/bin/mvn", "spring-boot:run"]
+ENTRYPOINT docker/entrypoint.sh
